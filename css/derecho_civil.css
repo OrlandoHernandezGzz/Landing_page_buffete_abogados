@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #171717;
+    --tino: #C52828;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Encabezado */
+.header {
+    background-color: var(--black);
+    padding: 0 100px;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.header__logo {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.nav {
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__link {
+    width: 300px;
+    padding: 15px 50px;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav__link:hover {
+    background-color: var(--tino);
+}
+
+
+/* Slide */
+.slide {
+    background-image: url('/img/slide_civil.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    color: var(--white);
+    padding: .1px;
+}
+
+.slide__title {
+    text-align: center;
+    margin-top: 350px; 
+}
+
+/* Info del servicio */
+.info {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.box1 {
+    width: 50%;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.box1__paragraph {
+    width: 80%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.box2 {
+    width: 50%;
+    font-size: 20px;
+}
+
+.box2__paragraph {
+    margin-top: 20px;
+}
+
+.box2__paragraph li {
+    padding: 5px;
+    text-align: justify;
+}
+
+
+/* Contacto */
+.contacto {
+    padding: 50px 100px;
+    background-color: var(--black);
+    color: var(--white);  
+}
+
+.contacto__title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contacto__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto__group {
+    width: 100%;
+}
+
+.contacto__group label {
+    font-size: 20px;
+}
+
+.contacto__group input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.contacto textarea {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contacto button {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: var(--tino);
+    color: var(--white);
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.contacto textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    border-radius: 5px;
+    width: 90%;
+    color: var(--white);
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    border-radius: 5px;
+    width: 90%;
+    color: var(--black);
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--tino);
+    color: var(--white);
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__contacts {
+    font-size: 25px;
+}
+
+.footer__redes {
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer__link:hover {
+    color: #171717;
+}
+
+
+
+/* Diseño Responsivo */
+@media (max-width: 300px) {
+    .header__logo {
+        display: none;
+    }
+}
