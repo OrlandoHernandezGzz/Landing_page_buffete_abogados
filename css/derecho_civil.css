@@ -56,7 +56,7 @@ body {
 
 /* Slide */
 .slide {
-    background-image: url('/img/slide_civil.svg');
+    background-image: url('../img/slide_civil.svg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
